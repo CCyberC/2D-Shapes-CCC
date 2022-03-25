@@ -15,7 +15,7 @@ if ( orientation=="Portrait" ) {
 if ( orientation=="Landscape or Square" ) {
   //Empty IF
 } else { 
-  println("Turn your phone");
+  println("Turn your phone"); //FUN
 }
 */
 //
@@ -23,7 +23,8 @@ if ( orientation=="Landscape or Square" ) {
 //
 //Face
 //Center a circle on display orientation
-rect();
+rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
+ellipse(faceX, faceY, faceDiameter, faceDiameter);
 //
 //Left Eye
 //rect();
