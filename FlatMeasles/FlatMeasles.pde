@@ -24,7 +24,7 @@ if ( orientation=="Landscape or Square" ) {
 //
 //Variable Population
 smallerDisplayDimension = displayHeight; //ALWAYS in Landscape
-rectFaceX = displayWidth*0; 
+rectFaceX = (displayWidth*1/2) - (smallerDisplayDimension*1/2); 
 rectFaceY = displayHeight*0;
 rectFaceWidth = smallerDisplayDimension; //Square Shape
 rectFaceHeight = smallerDisplayDimension; //Square Shape
