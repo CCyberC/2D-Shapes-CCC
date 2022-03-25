@@ -1,4 +1,7 @@
 //Global Variables
+int smallerDisplayDimension;
+float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
+float faceX, faceY, faceDiameter;
 //
 //Display Geometry
 fullScreen(); //teacher is using size(600, 400); need to use displayWidth and displayHeight
@@ -20,13 +23,14 @@ if ( orientation=="Landscape or Square" ) {
 */
 //
 //Variable Population
-rectFaceX = ; 
-rectFaceY = ;
-rectFaceWidth = ;
-rectFaceHeight = ;
+smallerDisplayDimension = displayHeight; //ALWAYS in Landscape
+rectFaceX = displayWidth*0; 
+rectFaceY = displayHeight*0;
+rectFaceWidth = smallerDisplayDimension; //Square Shape
+rectFaceHeight = smallerDisplayDimension; //Square Shape
 faceX = displayWidth*1/2; 
 faceY = displayHeight*1/2;
-//faceDiameter = ; 
+faceDiameter = smallerDisplayDimension; 
 
 //
 //Face: Circle = Inscribing a Circle in a Square
