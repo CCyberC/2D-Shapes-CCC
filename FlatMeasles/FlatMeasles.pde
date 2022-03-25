@@ -9,7 +9,7 @@ println(width, height, displayWidth, displayHeight); //Verification of values
 //if ( width >= height ) {println("Landscape or Square";} else {println("Portrait");}
 String orientation = (width >= height ) ? "Landscape or Square": "Portrait"; //Ternary Operator, repeats IF-ELSE
 println("Display Orientation:", orientation); //Verify variables
-if ( orientation=="Portrait" ) {
+if ( orientation=="Portrait" ) println("Turn your phone");
   //Empty IF
 /*
 if ( orientation=="Landscape or Square" ) {
