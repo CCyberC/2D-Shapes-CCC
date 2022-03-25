@@ -3,6 +3,7 @@ int smallerDisplayDimension;
 float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
+float mouthX1, mouthY1, mouthX2, mouthY2;
 //
 //Display Geometry
 fullScreen(); //teacher is using size(600, 400); need to use displayWidth and displayHeight
@@ -58,6 +59,7 @@ ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
 //
 //Nose
 //rect();
+triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
 //
 //Mouth
 //rect();
