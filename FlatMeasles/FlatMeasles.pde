@@ -2,6 +2,7 @@
 int smallerDisplayDimension;
 float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float faceX, faceY, faceDiameter;
+float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
 //
 //Display Geometry
 fullScreen(); //teacher is using size(600, 400); need to use displayWidth and displayHeight
@@ -31,6 +32,15 @@ rectFaceHeight = smallerDisplayDimension; //Square Shape
 faceX = displayWidth*1/2; 
 faceY = displayHeight*1/2;
 faceDiameter = smallerDisplayDimension; 
+leftEyeX = displayWidth*2.8/8;
+rightEyeX = displayWidth*5.2/8;
+leftEyeY = displayHeight*1/4;  
+rightEyeY = leftEyeY; //Best Practise: change one line of code
+eyeDiameter = smallerDisplayDimension*1/4;
+mouthX1 = leftEyeX; 
+mouthY1 = displayWidth*3/4; 
+mouthX2 = rightEyeX; 
+mouthY2 = mouthY1;
 
 //
 //Face: Circle = Inscribing a Circle in a Square
@@ -40,15 +50,18 @@ ellipse(faceX, faceY, faceDiameter, faceDiameter);
 //
 //Left Eye
 //rect();
+ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
 //
 //Right Eye
 //rect();
+ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
 //
 //Nose
 //rect();
 //
 //Mouth
 //rect();
+line(mouthX1, mouthY1, mouthX2, mouthY2);
 //
 //Measle
 //rect();
