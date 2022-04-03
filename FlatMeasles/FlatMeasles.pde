@@ -1,5 +1,5 @@
 //Global Variables
-int smallerDisplayDimension;
+int smallerDisplayDimension, mouthOpen;
 float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
@@ -43,6 +43,7 @@ mouthX1 = leftEyeX;
 mouthY1 = displayWidth*3/4; 
 mouthX2 = rightEyeX; 
 mouthY2 = displayWidth*3/4;
+mouthOpen = smallerDisplayDimension*1/4;
 xNose1 = faceX;
 yNose1 = leftEyeY;
 xNose2 = faceX - leftEyeY*1/2;
@@ -70,6 +71,7 @@ triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
 //
 //Mouth
 //rect();
+strokeWeight(mouthOpen);
 line(mouthX1, mouthY1, mouthX2, mouthY2);
 //
 //Measle
