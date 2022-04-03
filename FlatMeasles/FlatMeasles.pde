@@ -3,6 +3,7 @@ int smallerDisplayDimension;
 float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
+float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
 float mouthX1, mouthY1, mouthX2, mouthY2;
 //
 //Display Geometry
@@ -42,6 +43,12 @@ mouthX1 = leftEyeX;
 mouthY1 = displayWidth*3/4; 
 mouthX2 = rightEyeX; 
 mouthY2 = mouthY1;
+xNose1 = faceX;
+yNose1 = leftEyeY;
+xNose2 = faceX - leftEyeY*1/2;
+yNose2 = faceY;
+xNose3 = faceX + leftEyeY*1/2;
+yNose3 = faceY;
 
 //
 //Face: Circle = Inscribing a Circle in a Square
