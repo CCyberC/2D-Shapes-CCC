@@ -87,6 +87,11 @@ line(mouthX1, mouthY1, mouthX2, mouthY2);
 strokeWeight(reset); //
 //
 //Measle
+float measleX = appWidth*1/2;
+float measleY = appHeight*1/2;
+float measleDiameter = smallerDisplayDimension*1/100; //Very small measle
+color red=#CE3636, measleColour=red; //Note: need range here too
 //rect();
-//
-//Measle
+//random values given other variables (similar to button code)
+fill(measleColour);
+ellipse( measleX, measleY, measleDiameter, measleDiameter );
