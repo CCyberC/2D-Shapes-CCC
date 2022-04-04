@@ -1,5 +1,5 @@
 //Global Variables
-int smallerDisplayDimension, mouthOpen;
+int reset, smallerDisplayDimension, mouthOpen;
 float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
@@ -9,12 +9,20 @@ float mouthX1, mouthY1, mouthX2, mouthY2;
 //Display Geometry
 fullScreen(); //teacher is using size(600, 400); need to use displayWidth and displayHeight
 //Landscape, not square or portrait
+int appWidth = displayWidth, appHeight = displayHeight;
 println(width, height, displayWidth, displayHeight); //Verification of values
+println(displayWidth, displayHeight); //Canvas Flexibility
+//
 //Display Orientation
-//Conputer Tells us the orientation, important for Cell Phone Orientaation
+//Purpose: a few comparisons of IFs to ID orientation (similar to image() aspect ratio calculations)
+//Computer Tells us the orientation, important for Cell Phone Orientaation
+//-tell user specific orientation
+//if (appWidth >= appWidth ) {println("Landscape or Square");} else {println("Portrait");}
 //if ( width >= height ) {println("Landscape or Square";} else {println("Portrait");}
+String ls="Landscape or Square", p="Portrait", DO="Display Orientation", instruct="Bro, turn your phone";
 String orientation = (width >= height ) ? "Landscape or Square": "Portrait"; //Ternary Operator, repeats IF-ELSE
-println("Display Orientation:", orientation); //Verify variables
+println(DO, orientation);
+//println("Display Orientation:", orientation); //Verify variables
 if ( orientation=="Portrait" ) println("Turn your phone");
   //Empty IF
 /*
@@ -27,6 +35,7 @@ if ( orientation=="Landscape or Square" ) {
 //
 //Variable Population
 smallerDisplayDimension = displayHeight; //ALWAYS in Landscape
+reset = smallerDisplayDimension / smallerDisplayDimension; //returns "1"
 rectFaceX = (displayWidth*1/2) - (smallerDisplayDimension*1/2); 
 rectFaceY = displayHeight*0;
 rectFaceWidth = smallerDisplayDimension; //Square Shape
@@ -42,7 +51,7 @@ eyeDiameter = smallerDisplayDimension*1/4;
 mouthX1 = leftEyeX; 
 mouthY1 = displayWidth*3/4; 
 mouthX2 = rightEyeX; 
-mouthY2 = displayWidth*3/4;
+mouthY2 = mouthY1;
 mouthOpen = smallerDisplayDimension*1/4;
 xNose1 = faceX;
 yNose1 = leftEyeY;
@@ -71,8 +80,9 @@ triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
 //
 //Mouth
 //rect();
-strokeWeight(mouthOpen);
+strokeWeight(mouthOpen); //testing: 100=400/4, mouthOpen=height*1/4
 line(mouthX1, mouthY1, mouthX2, mouthY2);
+strokeWeight(reset); //
 //
 //Measle
 //rect();
