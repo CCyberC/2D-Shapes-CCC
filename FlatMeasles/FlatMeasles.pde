@@ -90,8 +90,8 @@ strokeWeight(reset); //reset to 1 pixel
 float measleDiameter = smallerDisplayDimension*1/25; //Range of mesle size: small=1/100, large=*1/25(4 times bigger)
 float measleRadius = measleDiameter*1/2;
 println ( measleRadius );
-float measleX = random( measleRadius , appWidth-measleRadius );
-float measleY = random( measleRadius, appHeight-measleRadius);
+float measleX = random( rectFaceX+measleRadius , (( rectFaceX+rectFaceWidth ) - measleRadius ));
+float measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
 color red=#CE3636, measleColour=red, blackReset=#000000; //Note: need range here too
 //rect();
 //random values given other variables (similar to button code)
