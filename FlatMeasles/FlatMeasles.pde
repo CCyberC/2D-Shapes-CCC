@@ -35,23 +35,23 @@ if ( orientation=="Landscape or Square" ) {
 }
 */
 //
-//Variable Population
+//Variable Population: notice using appWidth & appHeight to move between size() & fullScreen()
 smallerDisplayDimension = appHeight; //ALWAYS in Landscape
 reset = smallerDisplayDimension / smallerDisplayDimension; //returns "1"
-rectFaceX = (displayWidth*1/2) - (smallerDisplayDimension*1/2); 
-rectFaceY = displayHeight*0;
+rectFaceX = (appWidth*1/2) - (smallerDisplayDimension*1/2); 
+rectFaceY = appHeight*0;
 rectFaceWidth = smallerDisplayDimension; //Square Shape
 rectFaceHeight = smallerDisplayDimension; //Square Shape
-faceX = displayWidth*1/2; 
-faceY = displayHeight*1/2;
+faceX = appWidth*1/2; 
+faceY = appHeight*1/2;
 faceDiameter = smallerDisplayDimension; 
-leftEyeX = displayWidth*2.8/8;
-rightEyeX = displayWidth*5.2/8;
-leftEyeY = displayHeight*1/4;  
+leftEyeX = appWidth*2.8/8;
+rightEyeX = appWidth*5.2/8;
+leftEyeY = appHeight*1/4;  
 rightEyeY = leftEyeY; //Best Practise: change one line of code
 eyeDiameter = smallerDisplayDimension*1/4;
 mouthX1 = leftEyeX; 
-mouthY1 = displayWidth*3/4; 
+mouthY1 = appWidth*3/4; 
 mouthX2 = rightEyeX; 
 mouthY2 = mouthY1;
 mouthOpen = smallerDisplayDimension*1/4;
