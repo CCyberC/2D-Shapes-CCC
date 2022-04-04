@@ -3,27 +3,29 @@ int reset, smallerDisplayDimension, mouthOpen;
 float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
-float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
 float mouthX1, mouthY1, mouthX2, mouthY2;
+float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
 //
 //Display Geometry
 fullScreen(); //teacher is using size(600, 400); need to use displayWidth and displayHeight
 //Landscape, not square or portrait
 int appWidth = displayWidth, appHeight = displayHeight;
 println(width, height, displayWidth, displayHeight); //Verification of values
-println(displayWidth, displayHeight); //Canvas Flexibility
+println(appWidth, appHeight); //Canvas Flexibility
 //
 //Display Orientation
 //Purpose: a few comparisons of IFs to ID orientation (similar to image() aspect ratio calculations)
 //Computer Tells us the orientation, important for Cell Phone Orientaation
 //-tell user specific orientation
 //if (appWidth >= appWidth ) {println("Landscape or Square");} else {println("Portrait");}
-//if ( width >= height ) {println("Landscape or Square";} else {println("Portrait");}
 String ls="Landscape or Square", p="Portrait", DO="Display Orientation", instruct="Bro, turn your phone";
-String orientation = (width >= height ) ? "Landscape or Square": "Portrait"; //Ternary Operator, repeats IF-ELSE
+String orientation = (appWidth >= appHeight ) ? ls : p; //Ternary Operator, repeats IF-ELSE
+//String orientation = (appWidth >= appHeight ) ? "Landscape or Square": "Portrait"; //Ternary Operator, repeats IF-ELSE
 println(DO, orientation);
 //println("Display Orientation:", orientation); //Verify variables
-if ( orientation=="Portrait" ) println("Turn your phone");
+if ( orientation==p ) println(instruct);
+//With Strings, easier to print to console or canvas
+//if ( orientation=="Portrait" ) println("Turn your phone");
   //Empty IF
 /*
 if ( orientation=="Landscape or Square" ) {
@@ -34,7 +36,7 @@ if ( orientation=="Landscape or Square" ) {
 */
 //
 //Variable Population
-smallerDisplayDimension = displayHeight; //ALWAYS in Landscape
+smallerDisplayDimension = appHeight; //ALWAYS in Landscape
 reset = smallerDisplayDimension / smallerDisplayDimension; //returns "1"
 rectFaceX = (displayWidth*1/2) - (smallerDisplayDimension*1/2); 
 rectFaceY = displayHeight*0;
