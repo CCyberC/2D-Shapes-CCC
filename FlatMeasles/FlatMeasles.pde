@@ -87,7 +87,7 @@ line(mouthX1, mouthY1, mouthX2, mouthY2);
 strokeWeight(reset); //reset to 1 pixel
 //
 //Measle
-float measleDiameter = smallerDisplayDimension*1/25; //Range of mesle size: small=1/100, large=*1/25(4 times bigger)
+float measleDiameter = random( smallerDisplayDimension*1/100, smallerDisplayDimension*1/25); //Range of mesle size: small=1/100, large=*1/25(4 times bigger)
 float measleRadius = measleDiameter*1/2;
 println ( measleRadius );
 float measleX = random( rectFaceX+measleRadius , (( rectFaceX+rectFaceWidth ) - measleRadius ));
