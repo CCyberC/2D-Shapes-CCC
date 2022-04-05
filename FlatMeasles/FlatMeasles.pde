@@ -92,7 +92,17 @@ float measleRadius = measleDiameter*1/2;
 println ( measleRadius );
 float measleX = random( rectFaceX+measleRadius , (( rectFaceX+rectFaceWidth ) - measleRadius ));
 float measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
+Boolean nightMode=false; //Note: IF-ELSE similar to ternary operator
+//color red=#CE3636, measleColour=red, blackReset=#000000; //Note: need range here too
+color measleColour = ( nightMode==false ) ? color(255, random(0,50), random(0,120)) : night ; //ternary operator for day:night
+//color measleColour = ( nightMode==false ) ? day : night ; //ternary operator for day:night
+//color measleColour = () ? : ; //this is a ternary operator
+//
 color red=#CE3636, measleColour=red, blackReset=#000000; //Note: need range here too
+//
+//
+//
+
 //rect();
 //random values given other variables (similar to button code)
 noStroke(); //Shape outline
