@@ -5,6 +5,7 @@ float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
 float rectLEX, rectLEY, rectLEWidth, rectLEHeight;
 float rectREX, rectREY, rectREWidth, rectREHeight;
 float NX, NY, NWidth, NHeight;
+float MX, MY, MWidth, MHeight;
 float faceX, faceY, faceDiameter;
 float mouthX1, mouthY1, mouthX2, mouthY2;
 float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
@@ -66,6 +67,10 @@ mouthY1 = appHeight*3/4;
 mouthX2 = rightEyeX; 
 mouthY2 = mouthY1;
 mouthOpen = smallerDisplayDimension*1/4;
+MX = rectLEX;
+MY = mouthY1*1/1.2;
+MWidth = mouthX1*10.66/8;
+MHeight = mouthOpen;
 xNose1 = faceX;
 yNose1 = leftEyeY;
 xNose2 = faceX - leftEyeY*1/2;
@@ -96,7 +101,7 @@ rect(NX, NY, NWidth, NHeight);
 triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
 //
 //Mouth
-//rect();
+rect(MX, MY, MWidth, MHeight);
 strokeWeight(mouthOpen); //testing: 100=400/4, mouthOpen=height*1/4
 line(mouthX1, mouthY1, mouthX2, mouthY2);
 strokeWeight(reset); //reset to 1 pixel
