@@ -1,8 +1,11 @@
 //Global Variables
 int reset, smallerDisplayDimension, mouthOpen;
 float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
-float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
+float rectLEX, rectLEY, rectLEWidth, rectLEHeight;
+float rectREX, rectREY, rectREWidth, rectREHeight;
+float NX, NY, NWidth, NHeight;
+float faceX, faceY, faceDiameter;
 float mouthX1, mouthY1, mouthX2, mouthY2;
 float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
 //
@@ -50,6 +53,14 @@ rightEyeX = appWidth*5.2/8;
 leftEyeY = appHeight*1/4;  
 rightEyeY = leftEyeY; //Best Practise: change one line of code
 eyeDiameter = smallerDisplayDimension*1/4;
+rectLEX = leftEyeX*6.1/8;
+rectLEY = leftEyeY*1/2;
+rectLEWidth = eyeDiameter;
+rectLEHeight = eyeDiameter;
+rectREX = rightEyeX*6/8;
+rectREY = rightEyeY*1/2;
+rectREWidth = eyeDiameter;
+rectREHeight = eyeDiameter;
 mouthX1 = leftEyeX; 
 mouthY1 = appHeight*3/4; 
 mouthX2 = rightEyeX; 
@@ -61,6 +72,10 @@ xNose2 = faceX - leftEyeY*1/2;
 yNose2 = faceY;
 xNose3 = faceX + leftEyeY*1/2;
 yNose3 = faceY;
+NX = xNose2;
+NY = yNose1;
+NWidth = leftEyeY;
+NHeight = faceY*1/2;
 
 //
 //Face: Circle = Inscribing a Circle in a Square
@@ -69,15 +84,15 @@ rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
 ellipse(faceX, faceY, faceDiameter, faceDiameter);
 //
 //Left Eye
-//rect();
+rect(rectLEX, rectLEY, rectLEWidth, rectLEHeight);
 ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
 //
 //Right Eye
-//rect();
+rect(rectREX, rectREY, rectREWidth, rectREHeight);
 ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
 //
 //Nose
-//rect();
+rect(NX, NY, NWidth, NHeight);
 triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
 //
 //Mouth
