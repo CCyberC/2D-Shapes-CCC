@@ -87,39 +87,38 @@ void setup()
   rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
   ellipse(faceX, faceY, faceDiameter, faceDiameter);
   //
-  //Left Eye
-  rect(rectLEX, rectLEY, rectLEWidth, rectLEHeight);
-  ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
-  //
-  //Right Eye
-  rect(rectREX, rectREY, rectREWidth, rectREHeight);
-  ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
-  //
-  //Nose
-  rect(NX, NY, NWidth, NHeight);
-  triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
-  //
-  //Mouth
-  rect(MX, MY, MWidth, MHeight);
-  strokeWeight(mouthOpen); //testing: 100=400/4, mouthOpen=height*1/4
-  line(mouthX1, mouthY1, mouthX2, mouthY2);
-  strokeWeight(reset); //reset to 1 pixel
 }//End setup
 //
 void draw() {
+  //Left Eye
+  //rect(rectLEX, rectLEY, rectLEWidth, rectLEHeight);
+  ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
+  //
+  //Right Eye
+  //rect(rectREX, rectREY, rectREWidth, rectREHeight);
+  ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
+  //
+  //Nose
+  //rect(NX, NY, NWidth, NHeight);
+  triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
+  //
+  //Mouth
+  //rect(MX, MY, MWidth, MHeight);
+  strokeWeight(mouthOpen); //testing: 100=400/4, mouthOpen=height*1/4
+  line(mouthX1, mouthY1, mouthX2, mouthY2);
+  strokeWeight(reset); //reset to 1 pixel
   //Measle
-  float RMX, RMY, RMWidth, RMHeight;
   float measleDiameter = random( smallerDisplayDimension*1/100, smallerDisplayDimension*1/25); //Range of mesle size: small=1/100, large=*1/25(4 times bigger)
   float measleRadius = measleDiameter*1/2;
   float measleX = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
   float measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
-  /*
+  /*float RMX, RMY, RMWidth, RMHeight;
   RMWidth = measleDiameter;
-  RMHeight = measleDiameter;
-  RMX = measleX-measleDiameter*1/2;
-  RMY = measleY-measleDiameter*1/2;
-  rect(RMX, RMY, MeWidth, MeHeight);
-  */
+   RMHeight = measleDiameter;
+   RMX = measleX-measleDiameter*1/2;
+   RMY = measleY-measleDiameter*1/2;
+   rect(RMX, RMY, MeWidth, MeHeight);
+   */
   println ( measleRadius );
   Boolean nightMode=false; //Note: IF-ELSE similar to ternary operator
   //color red=#CE3636, measleColour=red, blackReset=#000000; //Note: need range here too
