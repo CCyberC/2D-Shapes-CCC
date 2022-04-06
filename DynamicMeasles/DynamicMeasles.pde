@@ -123,7 +123,7 @@ void draw() {
   Boolean nightMode=false; //Note: IF-ELSE similar to ternary operator
   //color red=#CE3636, measleColour=red, blackReset=#000000; //Note: need range here too
   color measleColour = ( nightMode==false ) ? color(255, random(0, 50), random(0, 120)) : color(255, random(0, 50), random(0, 0)) ; //ternary operator for day:night
-  color blackReset=#000000; //Note: need range here too
+  color whiteReset=#FFFFFF; //Note: need range here too
   //color measleColour = ( nightMode==false ) ? day : night ; //ternary operator for day:night
   //color measleColour = () ? : ; //this is a ternary operator
   //
@@ -133,7 +133,7 @@ void draw() {
   fill(measleColour);
   ellipse( measleX, measleY, measleDiameter, measleDiameter );
   stroke(reset); //reset to 1 pixel
-  fill(blackReset); //reset to first colour
+  fill(whiteReset); //reset to first colour
 }//End setup
 //
 void keyPressed() {
