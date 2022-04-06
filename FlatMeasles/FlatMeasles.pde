@@ -85,23 +85,23 @@ NHeight = faceY*1/2;
 //
 //Face: Circle = Inscribing a Circle in a Square
 //Center a circle on display orientation
-rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
+//rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
 ellipse(faceX, faceY, faceDiameter, faceDiameter);
 //
 //Left Eye
-rect(rectLEX, rectLEY, rectLEWidth, rectLEHeight);
+//rect(rectLEX, rectLEY, rectLEWidth, rectLEHeight);
 ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
 //
 //Right Eye
-rect(rectREX, rectREY, rectREWidth, rectREHeight);
+//rect(rectREX, rectREY, rectREWidth, rectREHeight);
 ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
 //
 //Nose
-rect(NX, NY, NWidth, NHeight);
+//rect(NX, NY, NWidth, NHeight);
 triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
 //
 //Mouth
-rect(MX, MY, MWidth, MHeight);
+//rect(MX, MY, MWidth, MHeight);
 strokeWeight(mouthOpen); //testing: 100=400/4, mouthOpen=height*1/4
 line(mouthX1, mouthY1, mouthX2, mouthY2);
 strokeWeight(reset); //reset to 1 pixel
@@ -130,8 +130,6 @@ color whiteReset=#FFFFFF; //Note: need range here too
 //
 //
 //
-
-//rect();
 //random values given other variables (similar to button code)
 noStroke(); //Shape outline
 fill(measleColour);
