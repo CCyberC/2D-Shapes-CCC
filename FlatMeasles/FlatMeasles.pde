@@ -114,8 +114,8 @@ float measleX = random( rectFaceX+measleRadius , (( rectFaceX+rectFaceWidth ) - 
 float measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
 MeWidth = measleDiameter;
 MeHeight = measleDiameter;
-RMX = measleX;
-RMY = measleY;
+RMX = measleX-measleDiameter*1/2;
+RMY = measleY-measleDiameter*1/2;
 rect(RMX, RMY, MeWidth, MeHeight);
 println ( measleRadius );
 Boolean nightMode=false; //Note: IF-ELSE similar to ternary operator
