@@ -10,7 +10,9 @@ float faceX, faceY, faceDiameter;
 float mouthX1, mouthY1, mouthX2, mouthY2;
 float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
 //
-void setup() {
+void setup() 
+{
+  //Display Geometry
   fullScreen(); //teacher is using size(600, 400); need to use displayWidth and displayHeight
   //Landscape, not square or portrait
   int appWidth = displayWidth, appHeight = displayHeight;
@@ -57,10 +59,7 @@ void mousePressed() {
 //
 //End Main Program
 
-//Global Variables
 
-//
-//Display Geometry
 //
 //Display Orientation
 //Purpose: a few comparisons of IFs to ID orientation (similar to image() aspect ratio calculations)
