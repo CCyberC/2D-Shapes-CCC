@@ -1,5 +1,7 @@
 //Global Variables
 float measleDiameter, measleRadius, measleX, measleY;
+float RMX, RMY, RMWidth, RMHeight;
+color measleColour;
 void measleDraw() 
 {
   //Measle
@@ -15,10 +17,10 @@ void measleDraw()
    rect(RMX, RMY, MeWidth, MeHeight);
    */
   println ( measleRadius );
-  Boolean nightMode=false; //Note: IF-ELSE similar to ternary operator
+  nightMode=false; //Note: IF-ELSE similar to ternary operator
   //color red=#CE3636, measleColour=red, blackReset=#000000; //Note: need range here too
-  color measleColour = ( nightMode==false ) ? color(255, random(0, 50), random(0, 120)) : color(255, random(0, 50), random(0, 0)) ; //ternary operator for day:night
-  color whiteReset=#FFFFFF; //Note: need range here too
+  measleColour = ( nightMode==false ) ? color(255, random(0, 50), random(0, 120)) : color(255, random(0, 50), random(0, 0)) ; //ternary operator for day:night
+  whiteReset=#FFFFFF; //Note: need range here too
   //color measleColour = ( nightMode==false ) ? day : night ; //ternary operator for day:night
   //color measleColour = () ? : ; //this is a ternary operator
   //
