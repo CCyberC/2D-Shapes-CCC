@@ -23,15 +23,7 @@ void setup()
   faceSetup();
 }//End setup
 //
-void draw() {
-  //Left Eye
-  //rect(rectLEX, rectLEY, rectLEWidth, rectLEHeight);
-  ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
-  //
-  //Right Eye
-  //rect(rectREX, rectREY, rectREWidth, rectREHeight);
-  ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
-  //
+void draw() { 
   leftEyeDraw();
   rightEyeDraw();
   noseDraw();

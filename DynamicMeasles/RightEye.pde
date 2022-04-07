@@ -1,4 +1,4 @@
-void () 
+void rightEyeDraw() 
 {
   //Right Eye
   //rect(rectREX, rectREY, rectREWidth, rectREHeight);
