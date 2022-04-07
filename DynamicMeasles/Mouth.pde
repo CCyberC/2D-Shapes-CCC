@@ -1,5 +1,6 @@
 //Global Variables
 float mouthX1, mouthY1, mouthX2, mouthY2;
+float MX, MY, MWidth, MHeight;
 //
 void mouthDraw() 
 {

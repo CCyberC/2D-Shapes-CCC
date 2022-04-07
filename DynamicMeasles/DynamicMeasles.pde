@@ -1,7 +1,6 @@
 //Global Variables
 int reset, smallerDisplayDimension, mouthOpen;
-float MX, MY, MWidth, MHeight;
-float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
+float eyeDiameter;
 //
 void setup() 
 {
