@@ -1,6 +1,10 @@
 //Global Variables
-float eyeDiameter;
+int appWidth, appHeight;
 int reset, smallerDisplayDimension, mouthOpen;
+color whiteReset;
+Boolean nightMode=false;
+//
+float eyeDiameter;
 //
 void setup() 
 {

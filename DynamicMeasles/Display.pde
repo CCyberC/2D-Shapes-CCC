@@ -1,10 +1,10 @@
-//Global Variables
 void displaySetup() 
 {
   //Display Geometry
   //Landscape, not square or portrait
-  int appWidth = displayWidth, appHeight = displayHeight;
   println(width, height, displayWidth, displayHeight); //Verification of values
+  appWidth = displayWidth; 
+  appHeight = displayHeight;
   println(appWidth, appHeight); //Canvas Flexibility
   //
   //Display Orientation
@@ -20,12 +20,13 @@ void displaySetup()
   if ( orientation==p ) println(instruct);
   //With Strings, easier to print to console or canvas
   //if ( orientation=="Portrait" ) println("Turn your phone");
-  //Empty IF
+    //Empty IF
   /*
   if ( orientation=="Landscape or Square" ) {
    //Empty IF
    } else { 
    println("Turn your phone"); //FUN
+   }
    */
   //
 }//End displaySetup
