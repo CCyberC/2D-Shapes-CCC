@@ -5,8 +5,6 @@ float eyeDiameter;
 void setup() 
 {
   fullScreen(); //teacher is using size(600, 400); need to use displayWidth and displayHeight
-  //Display Geometry
-  //Landscape, not square or portrait
   displaySetup();
   population();
   faceSetup();
