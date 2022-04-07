@@ -32,15 +32,10 @@ void draw() {
   //rect(rectREX, rectREY, rectREWidth, rectREHeight);
   ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
   //
-  measleDraw();
   leftEyeDraw();
   rightEyeDraw();
   noseDraw();
-  //Mouth
-  //rect(MX, MY, MWidth, MHeight);
-  strokeWeight(mouthOpen); //testing: 100=400/4, mouthOpen=height*1/4
-  line(mouthX1, mouthY1, mouthX2, mouthY2);
-  strokeWeight(reset); //reset to 1 pixel
+  mouthDraw();
   measleDraw();
 }//End setup
 //
