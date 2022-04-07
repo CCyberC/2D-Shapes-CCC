@@ -32,10 +32,10 @@ void draw() {
   //rect(rectREX, rectREY, rectREWidth, rectREHeight);
   ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
   //
-  //Nose
-  //rect(NX, NY, NWidth, NHeight);
-  triangle(xNose1, yNose1, xNose2, yNose2, xNose3, yNose3);
-  //
+  measleDraw();
+  leftEyeDraw();
+  rightEyeDraw();
+  noseDraw();
   //Mouth
   //rect(MX, MY, MWidth, MHeight);
   strokeWeight(mouthOpen); //testing: 100=400/4, mouthOpen=height*1/4
