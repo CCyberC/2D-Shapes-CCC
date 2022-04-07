@@ -20,10 +20,6 @@ void population()
   mouthX2 = rightEyeX; 
   mouthY2 = mouthY1;
   mouthOpen = smallerDisplayDimension*1/4;
-  MX = rectLEX;
-  MY = mouthY1*1/1.2;
-  MWidth = mouthX1*10.66/8;
-  MHeight = mouthOpen;
   xNose1 = faceX;
   yNose1 = leftEyeY;
   xNose2 = faceX - leftEyeY*1/2;
