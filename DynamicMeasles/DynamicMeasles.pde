@@ -39,7 +39,9 @@ void setup()
    } else { 
    println("Turn your phone"); //FUN
    */
+   //
   population();
+  //
   //Face: Circle = Inscribing a Circle in a Square
   //Center a circle on display orientation
   //rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
