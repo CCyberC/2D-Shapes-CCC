@@ -1,12 +1,12 @@
 //Global Variables
-
+float measleDiameter, measleRadius, measleX, measleY;
 void measleDraw() 
 {
   //Measle
-  float measleDiameter = random( smallerDisplayDimension*1/100, smallerDisplayDimension*1/25); //Range of mesle size: small=1/100, large=*1/25(4 times bigger)
-  float measleRadius = measleDiameter*1/2;
-  float measleX = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
-  float measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
+  measleDiameter = random( smallerDisplayDimension*1/100, smallerDisplayDimension*1/25); //Range of mesle size: small=1/100, large=*1/25(4 times bigger)
+  measleRadius = measleDiameter*1/2;
+  measleX = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
+  measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
   /*float RMX, RMY, RMWidth, RMHeight;
    RMWidth = measleDiameter;
    RMHeight = measleDiameter;
