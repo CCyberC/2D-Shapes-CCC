@@ -1,3 +1,5 @@
+//Global Variables
+
 void leftEyeDraw() 
 {
   //Left Eye

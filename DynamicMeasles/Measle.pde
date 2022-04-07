@@ -1,3 +1,5 @@
+//Global Variables
+
 void measleDraw() 
 {
   //Measle

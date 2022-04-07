@@ -1,3 +1,5 @@
+//Global Variables
+
 void displaySetup() 
 {
   //Display Geometry

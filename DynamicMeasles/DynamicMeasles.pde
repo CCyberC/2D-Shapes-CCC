@@ -1,13 +1,9 @@
 //Global Variables
 int reset, smallerDisplayDimension, mouthOpen;
-float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
 float rectLEX, rectLEY, rectLEWidth, rectLEHeight;
 float rectREX, rectREY, rectREWidth, rectREHeight;
-float NX, NY, NWidth, NHeight;
 float MX, MY, MWidth, MHeight;
-float faceX, faceY, faceDiameter;
-float mouthX1, mouthY1, mouthX2, mouthY2;
 float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
 //
 void setup() 

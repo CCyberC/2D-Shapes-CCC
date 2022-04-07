@@ -1,3 +1,6 @@
+//Global Variables
+float NX, NY, NWidth, NHeight;
+//
 void noseDraw() 
 {
   //Nose
