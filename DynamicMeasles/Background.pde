@@ -1,3 +1,5 @@
+//Global Variables
+
 void background() 
 {
   PImage img;
