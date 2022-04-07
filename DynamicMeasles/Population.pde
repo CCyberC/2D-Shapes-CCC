@@ -15,14 +15,6 @@ void population()
   leftEyeY = appHeight*1/4;  
   rightEyeY = leftEyeY; //Best Practise: change one line of code
   eyeDiameter = smallerDisplayDimension*1/4;
-  rectLEX = leftEyeX*6.1/8;
-  rectLEY = leftEyeY*1/2;
-  rectLEWidth = eyeDiameter;
-  rectLEHeight = eyeDiameter;
-  rectREX = rightEyeX*6.97/8;
-  rectREY = rightEyeY*1/2;
-  rectREWidth = eyeDiameter;
-  rectREHeight = eyeDiameter;
   mouthX1 = leftEyeX; 
   mouthY1 = appHeight*3/4; 
   mouthX2 = rightEyeX; 
