@@ -12,40 +12,16 @@ float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
 //
 void setup() 
 {
-  //Display Geometry
   fullScreen(); //teacher is using size(600, 400); need to use displayWidth and displayHeight
+  //Display Geometry
   //Landscape, not square or portrait
   int appWidth = displayWidth, appHeight = displayHeight;
   println(width, height, displayWidth, displayHeight); //Verification of values
   println(appWidth, appHeight); //Canvas Flexibility
   //
-  //Display Orientation
-  //Purpose: a few comparisons of IFs to ID orientation (similar to image() aspect ratio calculations)
-  //Computer Tells us the orientation, important for Cell Phone Orientaation
-  //-tell user specific orientation
-  //if (appWidth >= appWidth ) {println("Landscape or Square");} else {println("Portrait");}
-  String ls="Landscape or Square", p="Portrait", DO="Display Orientation", instruct="Bro, turn your phone";
-  String orientation = (appWidth >= appHeight ) ? ls : p; //Ternary Operator, repeats IF-ELSE
-  //String orientation = (appWidth >= appHeight ) ? "Landscape or Square": "Portrait"; //Ternary Operator, repeats IF-ELSE
-  println(DO, orientation);
-  //println("Display Orientation:", orientation); //Verify variables
-  if ( orientation==p ) println(instruct);
-  //With Strings, easier to print to console or canvas
-  //if ( orientation=="Portrait" ) println("Turn your phone");
-  //Empty IF
-  /*
-  if ( orientation=="Landscape or Square" ) {
-   //Empty IF
-   } else { 
-   println("Turn your phone"); //FUN
-   */
-   //
+  displaySetup();
   population();
-  //
-  //Face: Circle = Inscribing a Circle in a Square
-  //Center a circle on display orientation
-  //rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
-  ellipse(faceX, faceY, faceDiameter, faceDiameter);
+  faceSetup();
   //
 }//End setup
 //
