@@ -18,11 +18,9 @@ void setup()
   int appWidth = displayWidth, appHeight = displayHeight;
   println(width, height, displayWidth, displayHeight); //Verification of values
   println(appWidth, appHeight); //Canvas Flexibility
-  //
   displaySetup();
   population();
   faceSetup();
-  //
 }//End setup
 //
 void draw() {
