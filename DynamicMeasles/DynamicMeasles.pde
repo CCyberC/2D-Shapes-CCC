@@ -1,8 +1,5 @@
 //Global Variables
 int reset, smallerDisplayDimension, mouthOpen;
-float leftEyeX, leftEyeY, rightEyeX, rightEyeY, eyeDiameter;
-float rectLEX, rectLEY, rectLEWidth, rectLEHeight;
-float rectREX, rectREY, rectREWidth, rectREHeight;
 float MX, MY, MWidth, MHeight;
 float xNose1, yNose1, xNose2, yNose2, xNose3, yNose3;
 //
