@@ -8,6 +8,9 @@ float eyeDiameter;
 float iDiameter;
 float pDiameter;
 //
+color iris;
+color pupil;
+//
 void setup() 
 {
   fullScreen(); //teacher is using size(600, 400); need to use displayWidth and displayHeight

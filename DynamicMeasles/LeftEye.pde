@@ -1,7 +1,6 @@
 //Global Variables
 float leftEyeX, leftEyeY;
 float rectLEX, rectLEY, rectLEWidth, rectLEHeight;
-float ileftEyeX, ileftEyeY;
 float pleftEyeX, pleftEyeY;
 //
 void leftEyeDraw() 
@@ -15,7 +14,11 @@ void leftEyeDraw()
   */
   //rect(rectLEX, rectLEY, rectLEWidth, rectLEHeight);
   ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
+  //
   ellipse(ileftEyeX, ileftEyeY, iDiameter, iDiameter);
+  iris = color(214, 143, 0);
+  fill(iris);
+  //
   ellipse(pleftEyeX, pleftEyeY, pDiameter, pDiameter);
   //
 }//End leftEyeDraw

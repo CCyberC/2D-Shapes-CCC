@@ -40,5 +40,7 @@ void population()
   prightEyeY = leftEyeY;
   iDiameter = eyeDiameter*1/2;
   pDiameter = eyeDiameter*1/3;
+  iris=#D68F00;
+  pupil=#000000;
   //
 }//End population
