@@ -12,11 +12,11 @@ void measleDraw()
   //measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
   measleX2 = random( rectLEX+measleRadius, (rightEyeX+eyeDiameter*1/2)-measleRadius);
   measleY2 = random( rectLEY+measleRadius, MY+MHeight*1/2 );
-  measleX3 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
-  measleY3 = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
-  /*
+  measleX3 = random( (rectFaceX+measleRadius)+measleRadius*2, ((( rectFaceX+rectFaceWidth ) - measleRadius ))-measleRadius*2);
+  measleY3 = random( (rectLEY+rectLEHeight)+measleRadius, MY-measleRadius);
   measleX4 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
-  measleY4 = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
+  measleY4 = random( pleftEyeY+measleRadius, (( MY+MHeight*1/2 ) - measleRadius));
+  /*
   measleX5 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
   measleY5 = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
   measleX6 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
@@ -44,8 +44,8 @@ void measleDraw()
   //ellipse( measleX, measleY, measleDiameter, measleDiameter );
   ellipse( measleX2, measleY2, measleDiameter, measleDiameter );
   ellipse( measleX3, measleY3, measleDiameter, measleDiameter );
-  /*
   ellipse( measleX4, measleY4, measleDiameter, measleDiameter );
+  /*
   ellipse( measleX5, measleY5, measleDiameter, measleDiameter );
   ellipse( measleX6, measleY6, measleDiameter, measleDiameter );
   */

@@ -9,10 +9,8 @@ void leftEyeDraw()
   //Left Eye
   rectLEX = leftEyeX*6.1/8;
   rectLEY = leftEyeY*1/2;
-  /*
-  rectLEWidth = eyeDiameter;
+  //rectLEWidth = eyeDiameter;
   rectLEHeight = eyeDiameter;
-  */
   //rect(rectLEX, rectLEY, rectLEWidth, rectLEHeight);
   ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
   //

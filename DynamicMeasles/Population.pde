@@ -45,5 +45,9 @@ void population()
   hatColor=#ED7300;
   whiteReset=#FFFFFF;
   lips = loadImage("5b135831a2c9179fd8d44131a4dd7e28.png");
+  rectXLips = MX; 
+  rectYLips = MY;
+  rectWidthLips = MWidth;
+  rectHeightLips = MHeight;
   //
 }//End population
