@@ -1,6 +1,8 @@
 //Global Variables
 float rightEyeX, rightEyeY;
 float rectREX, rectREY, rectREWidth, rectREHeight;
+float irightEyeX, irightEyeY;
+float prightEyeX, prightEyeY;
 //
 void rightEyeDraw() 
 {
@@ -13,5 +15,7 @@ void rightEyeDraw()
   */
   //rect(rectREX, rectREY, rectREWidth, rectREHeight);
   ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
+  ellipse(irightEyeX, irightEyeY, iDiameter, iDiameter);
+  ellipse(prightEyeX, prightEyeY, pDiameter, pDiameter);
   //
 }//End rightEyeDraw

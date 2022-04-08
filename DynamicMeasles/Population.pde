@@ -30,5 +30,15 @@ void population()
   NY = yNose1;
   NWidth = leftEyeY;
   NHeight = faceY*1/2;
+  ileftEyeX = appWidth*2.8/8;
+  irightEyeX = appWidth*5.2/8;
+  ileftEyeY = appHeight*1/4;  
+  irightEyeY = leftEyeY;
+  pleftEyeX = appWidth*2.8/8;
+  prightEyeX = appWidth*5.2/8;
+  pleftEyeY = appHeight*1/4;  
+  prightEyeY = leftEyeY;
+  iDiameter = eyeDiameter*1/2;
+  pDiameter = eyeDiameter*1/3;
   //
 }//End population
