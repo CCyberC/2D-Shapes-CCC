@@ -7,6 +7,7 @@ Boolean nightMode=false;
 float eyeDiameter;
 float iDiameter;
 float pDiameter;
+float faceX, faceY, faceDiameter;
 //
 color iris;
 color pupil;

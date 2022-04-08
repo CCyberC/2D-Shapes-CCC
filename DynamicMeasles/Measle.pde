@@ -5,8 +5,11 @@ color measleColour;
 void measleDraw() 
 {
   //Measle
+  //ellipse(measleX, measleY, measleDiameter, measleDiameter);
   measleDiameter = random( smallerDisplayDimension*1/100, smallerDisplayDimension*1/25); //Range of mesle size: small=1/100, large=*1/25(4 times bigger)
   measleRadius = measleDiameter*1/2;
+  //measleX = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
+  //measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
   measleX = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
   measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
   /*float RMX, RMY, RMWidth, RMHeight;
