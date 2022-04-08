@@ -1,6 +1,7 @@
 //Global Variables
 float leftEyeX, leftEyeY;
 float rectLEX, rectLEY, rectLEWidth, rectLEHeight;
+float ileftEyeX, ileftEyeY;
 float pleftEyeX, pleftEyeY;
 //
 void leftEyeDraw() 
