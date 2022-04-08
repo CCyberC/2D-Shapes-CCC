@@ -42,5 +42,8 @@ void population()
   pDiameter = eyeDiameter*1/3;
   iris=#D68F00;
   pupil=#000000;
+  hatColor=#ED7300;
+  whiteReset=#FFFFFF;
+  lips = loadImage("5b135831a2c9179fd8d44131a4dd7e28.png");
   //
 }//End population

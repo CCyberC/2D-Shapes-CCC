@@ -18,6 +18,7 @@ void setup()
   displaySetup();
   population();
   faceSetup();
+  hat();
 }//End setup
 //
 void draw() { 
