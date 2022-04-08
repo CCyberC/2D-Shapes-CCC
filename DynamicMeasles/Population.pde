@@ -49,5 +49,10 @@ void population()
   rectYLips = MY;
   rectWidthLips = MWidth;
   rectHeightLips = MHeight;
+  background = loadImage("wp5495357.jpg");
+  rectXBack = MX; 
+  rectYBack = MY;
+  rectWidthBack = MWidth;
+  rectHeightBack = MHeight;
   //
 }//End population
