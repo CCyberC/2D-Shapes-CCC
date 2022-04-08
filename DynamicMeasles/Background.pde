@@ -1,6 +1,6 @@
 //Global Variables
 float rectXBack, rectYBack, rectWidthBack, rectHeightBack;
-PImage background;
+PImage backyground;
 int backWidth = 1920;
 int backHeight = 1080;
 int largerBackDimension, smallerBackDimension;
@@ -8,7 +8,7 @@ float backWidthRatio=0.0, backHeightRatio=0.0;
 Boolean widthBackLarger=false, heightBackLarger=false;
 float backWidthAdjusted, backHeightAdjusted;
 //
-void background() 
+void backyground() 
 {
   if ( backWidth >= backHeight ) { //ID Larger Dimension: Landscape and Square
     largerBackDimension = backWidth;
@@ -28,21 +28,21 @@ void background()
   if ( heightBackLarger == true ) backHeightRatio = float (largerBackDimension) / float (largerBackDimension);
   println(backWidthRatio, backHeightRatio);
   //
-  rectXBack = rectFaceX; 
-  rectYBack = rectFaceY; 
-  rectWidthBack = rectFaceWidth; 
-  rectHeightBack = rectFaceHeight;
   /*
   rectXBack = displayWidth*1/4; 
   rectYBack = displayHeight*0; 
   rectWidthBack = displayWidth*1/2; 
   rectHeightBack = displayHeight*1/2;
   */
+  rectXBack = rectFaceX; 
+  rectYBack = rectFaceY; 
+  rectWidthBack = rectFaceWidth; 
+  rectHeightBack = rectFaceHeight;
   //
   backWidthAdjusted = rectWidthBack * backWidthRatio;
   backHeightAdjusted = rectHeightBack * backHeightRatio;
   println(backWidth, backHeight);
   println (backWidthAdjusted, backHeightAdjusted);
   //
-  image(background, rectXBack, rectYBack, backWidthAdjusted, backHeightAdjusted);
+  image(backyground, rectXBack, rectYBack, backWidthAdjusted, backHeightAdjusted);
 }//End mouthDraw
