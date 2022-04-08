@@ -15,7 +15,17 @@ void rightEyeDraw()
   */
   //rect(rectREX, rectREY, rectREWidth, rectREHeight);
   ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
+  //
+  noStroke();
+  fill(iris);
   ellipse(irightEyeX, irightEyeY, iDiameter, iDiameter);
+  stroke(reset);
+  fill(whiteReset);
+  //
+  noStroke();
+  fill(pupil);
   ellipse(prightEyeX, prightEyeY, pDiameter, pDiameter);
+  stroke(reset);
+  fill(whiteReset);
   //
 }//End rightEyeDraw

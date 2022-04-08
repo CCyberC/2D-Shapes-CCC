@@ -16,10 +16,16 @@ void leftEyeDraw()
   //rect(rectLEX, rectLEY, rectLEWidth, rectLEHeight);
   ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
   //
-  ellipse(ileftEyeX, ileftEyeY, iDiameter, iDiameter);
-  iris = color(214, 143, 0);
+  noStroke();
   fill(iris);
+  ellipse(ileftEyeX, ileftEyeY, iDiameter, iDiameter);
+  stroke(reset);
+  fill(whiteReset);
   //
+  noStroke();
+  fill(pupil);
   ellipse(pleftEyeX, pleftEyeY, pDiameter, pDiameter);
+  stroke(reset);
+  fill(whiteReset);
   //
 }//End leftEyeDraw
