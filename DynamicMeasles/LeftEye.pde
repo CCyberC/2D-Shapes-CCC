@@ -7,9 +7,9 @@ float pleftEyeX, pleftEyeY;
 void leftEyeDraw() 
 {
   //Left Eye
-  /*
   rectLEX = leftEyeX*6.1/8;
   rectLEY = leftEyeY*1/2;
+  /*
   rectLEWidth = eyeDiameter;
   rectLEHeight = eyeDiameter;
   */

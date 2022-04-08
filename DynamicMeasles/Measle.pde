@@ -1,5 +1,5 @@
 //Global Variables
-float measleDiameter, measleRadius, measleX, measleY;
+float measleDiameter, measleRadius, measleX, measleY, measleX2, measleY2, measleX3, measleY3, measleX4, measleY4, measleX5, measleY5, measleX6, measleY6;
 float RMX, RMY, RMWidth, RMHeight;
 color measleColour;
 void measleDraw() 
@@ -10,8 +10,18 @@ void measleDraw()
   measleRadius = measleDiameter*1/2;
   //measleX = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
   //measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
-  measleX = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
-  measleY = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
+  measleX2 = random( rectLEX+measleRadius, (rightEyeX+eyeDiameter*1/2)-measleRadius);
+  measleY2 = random( rectLEY, (( rectFaceY+rectFaceHeight ) - measleRadius));
+  /*
+  measleX3 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
+  measleY3 = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
+  measleX4 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
+  measleY4 = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
+  measleX5 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
+  measleY5 = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
+  measleX6 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
+  measleY6 = random( rectFaceY+measleRadius, (( rectFaceY+rectFaceHeight ) - measleRadius));
+  */
   /*float RMX, RMY, RMWidth, RMHeight;
    RMWidth = measleDiameter;
    RMHeight = measleDiameter;
@@ -32,6 +42,11 @@ void measleDraw()
   noStroke(); //Shape outline
   fill(measleColour);
   ellipse( measleX, measleY, measleDiameter, measleDiameter );
+  ellipse( measleX2, measleY2, measleDiameter, measleDiameter );
+  ellipse( measleX3, measleY3, measleDiameter, measleDiameter );
+  ellipse( measleX4, measleY4, measleDiameter, measleDiameter );
+  ellipse( measleX5, measleY5, measleDiameter, measleDiameter );
+  ellipse( measleX6, measleY6, measleDiameter, measleDiameter );
   stroke(reset); //reset to 1 pixel
   fill(whiteReset); //reset to first colour
 }//End measleDraw
