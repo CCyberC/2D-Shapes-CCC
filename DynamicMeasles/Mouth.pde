@@ -1,13 +1,6 @@
 //Global Variables
 float mouthX1, mouthY1, mouthX2, mouthY2;
 float MX, MY, MWidth, MHeight;
-float rectXLips, rectYLips, rectWidthLips, rectHeightLips;
-PImage lips;
-int lipsWidth = 3000;
-int lipsHeight = 2075;
-float lipsWidthRatioPic1=0.0, lipsHeightRatioPic1=0.0;
-Boolean widthLipsLarger=false, heightLipsarger=false;
-float lipsWidthAdjusted, lipsHeightAdjusted;
 //
 void mouthDraw() 
 {
@@ -22,5 +15,5 @@ void mouthDraw()
   line(mouthX1, mouthY1, mouthX2, mouthY2);
   strokeWeight(reset); //reset to 1 pixel
   */
-  image(lips, rectXLips, rectYLips, lipsWidthAdjusted, lipsHeightAdjusted);
+  lipsDraw();
 }//End mouthDraw
