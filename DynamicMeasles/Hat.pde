@@ -13,6 +13,10 @@ color hatColor;
 //
 void hat() 
 {
+  hatX = ;
+  hatY = ;
+  hatWidth = ;
+  hatHeight = ;
   if ( hatintWidth >= hatintHeight ) { //ID Larger Dimension: Landscape and Square
     largerHatDimension = hatintWidth;
     smallerHatDimension = hatintHeight;
