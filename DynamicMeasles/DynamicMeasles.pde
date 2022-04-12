@@ -19,7 +19,6 @@ void setup()
   displaySetup();
   population();
   faceSetup();
-  hat();
 }//End setup
 //
 void draw() { 
@@ -28,6 +27,7 @@ void draw() {
   noseDraw();
   mouthDraw();
   measleDraw();
+  hat();
 }//End setup
 //
 void keyPressed() {
