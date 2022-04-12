@@ -1,4 +1,5 @@
 //Global Variables
+float hatX1, hatY1, hatX2, hatY2;
 float hatX, hatY, hatWidth, hatHeight;
 float rectXHat, rectYHat, rectWidthHat, rectHeightHat;
 PImage hat;

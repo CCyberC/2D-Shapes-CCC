@@ -55,6 +55,10 @@ void population()
   rectWidthBack = rectFaceWidth; 
   rectHeightBack = rectFaceHeight;
   hat = loadImage("476-4764599_baseball-cap-png-image-background-baseball-cap-transparent.png");
+  hatX1 = ; 
+  hatY1 = ; 
+  hatX2 = ; 
+  hatY2 = ;
   rectXHat = rectFaceX; 
   rectYHat = rectFaceY; 
   rectWidthHat = rectFaceWidth; 
