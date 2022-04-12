@@ -21,6 +21,7 @@ void setup()
   faceSetup();
   displayButtonOrientation();
   buttonPopulation();
+  hat();
 }//End setup
 //
 void draw() 
@@ -30,7 +31,6 @@ void draw()
   noseDraw();
   mouthDraw();
   measleDraw();
-  hat();
   quitButtonDraw();
 }//End setup
 //
