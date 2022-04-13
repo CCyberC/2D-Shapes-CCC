@@ -18,10 +18,10 @@ void measleDraw()
   measleY4 = random( pleftEyeY+measleRadius, (( MY+MHeight*1/2 ) - measleRadius));
   measleX5 = random( rectLEX+measleRadius, (rightEyeX+eyeDiameter*1/2)-measleRadius);
   measleY5 = random( MY, (( rectFaceHeight*14/16 ) - measleRadius));
-  measleX6 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
+  measleX6 = random( MX+measleRadius, ( MWidth - measleRadius ));
   measleY6 = random( rectFaceHeight*14/16, (( rectFaceHeight*15/16 ) - measleRadius) );
   measleX7 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
-  measleY7 = random( rectFaceHeight*14/16, (( rectFaceHeight*15/16 ) - measleRadius) );
+  measleY7 = random( (( rectFaceHeight*15/16 ) - measleRadius), rectFaceHeight - measleRadius );
   measleX8 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
   measleY8 = random( rectFaceHeight*14/16, (( rectFaceHeight*15/16 ) - measleRadius) );
   /*float RMX, RMY, RMWidth, RMHeight;
