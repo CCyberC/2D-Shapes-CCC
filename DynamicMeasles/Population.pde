@@ -72,5 +72,6 @@ void population()
   titleY = displayHeight*1/10;
   titleWidth = displayWidth*3/10; //Rect ends at 4/5's of width
   titleHeight = displayHeight*1/10; //Rect ends at 2/10's of height
+  titleFont = createFont("Cambria-Bold-48", 55);
   //
 }//End population
