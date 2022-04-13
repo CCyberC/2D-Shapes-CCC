@@ -68,10 +68,16 @@ void population()
   int centerY = appHeight*1/2;  
   quitButtonSetupPopulation(centerX, centerY); 
   //QuitButtonTitle
+  /*
   titleX = displayWidth*1/5;
   titleY = displayHeight*1/10;
   titleWidth = displayWidth*3/10; //Rect ends at 4/5's of width
   titleHeight = displayHeight*1/10; //Rect ends at 2/10's of height
+  */
+  titleX = quitButtonX;
+  titleY = quitButtonY;
+  titleWidth = quitButtonWidth;
+  titleHeight = displayHeight*1/10;
   titleFont = createFont("Cambria-Bold-48", 55);
   //
 }//End population

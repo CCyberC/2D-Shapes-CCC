@@ -31,7 +31,6 @@ void draw()
   mouthDraw();
   measleDraw();
   quitButtonDraw();
-  quitButtonTitle();
 }//End setup
 //
 void keyPressed() 

@@ -10,8 +10,8 @@ void quitButtonSetupPopulation(int centerX, int centerY)
 {
   quitButtonX = centerX - appWidth*1/4; //1/4 on one-half, 1/4 on other half
   quitButtonY = centerY - appHeight*1/4;
-  quitButtonWidth = appWidth*1/2;
-  quitButtonHeight = appHeight*1/2;
+  quitButtonWidth = appWidth*1/5;
+  quitButtonHeight = appHeight*1/7;
 }//End quitButtonSetup
 //
 void quitButtonDraw() 
@@ -28,6 +28,8 @@ void quitButtonDraw()
   fill(buttonColour);
   rect( quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight );
   fill(whiteReset);
+  //
+  quitButtonTitle();
 }//End quitButtonDraw
 //
 void quitButtonkeyPressed() 
@@ -46,11 +48,11 @@ void quitButtonmousePressed()
 //
 void quitButtonTitle() 
 {
-  rect(titleX, titleY, titleWidth, titleHeight); 
+  //rect(titleX, titleY, titleWidth, titleHeight); 
   fill(purple); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASEMENT ]
-  textFont(titleFont, 50); //Change the number until it fits
+  textFont(titleFont, 125); //Change the number until it fits
   text(title, titleX, titleY, titleWidth, titleHeight);
   fill(resetDefaultInk);
 }//End quitButtonTitle
