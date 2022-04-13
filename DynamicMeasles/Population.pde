@@ -63,18 +63,14 @@ void population()
   hatY1 = rectYHat; 
   hatX2 = rectWidthHat+rectXHat; 
   hatY2 = appHeight;
-  //
-}//End population
-//
-void buttonPopulation() 
-{
-  //Population
-  //Note: Variables similar to Face Rect() on Measles
-  /*
-  int smallerDisplayDimension = appHeight;
-  int canvasCenter = smallerDisplayDimension*1/2; //thinking experiment
-  */
+  //QuitButton
   int centerX = appWidth*1/2;
   int centerY = appHeight*1/2;  
-  quitButtonSetupPopulation(centerX, centerY); //Passing Parameters
-}//End buttonPopulation
+  quitButtonSetupPopulation(centerX, centerY); 
+  //QuitButtonTitle
+  titleX = displayWidth*1/5;
+  titleY = displayHeight*1/10;
+  titleWidth = displayWidth*3/10; //Rect ends at 4/5's of width
+  titleHeight = displayHeight*1/10; //Rect ends at 2/10's of height
+  //
+}//End population
