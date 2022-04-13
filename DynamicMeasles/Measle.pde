@@ -20,7 +20,7 @@ void measleDraw()
   measleY5 = random( MY, (( rectFaceHeight*14/16 ) - measleRadius));
   measleX6 = random( MX+measleRadius, ( MWidth - measleRadius ));
   measleY6 = random( rectFaceHeight*14/16, (( rectFaceHeight*15/16 ) - measleRadius) );
-  measleX7 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
+  measleX7 = random( (rectFaceX+(MX*1/4))+measleRadius, ( rectFaceX+(MWidth*3/4) ) - measleRadius );
   measleY7 = random( (( rectFaceHeight*15/16 ) - measleRadius), rectFaceHeight - measleRadius );
   measleX8 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
   measleY8 = random( rectFaceHeight*14/16, (( rectFaceHeight*15/16 ) - measleRadius) );
