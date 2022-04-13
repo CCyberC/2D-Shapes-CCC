@@ -6,10 +6,10 @@ float titleX, titleY, titleWidth, titleHeight;
 PFont titleFont;
 color purple=#A18AE0, resetDefaultInk=#FFFFFF;
 //
-void quitButtonSetupPopulation(int centerX, int centerY) 
+void quitButtonSetupPopulation() 
 {
-  quitButtonX = centerX - appWidth*1/4; //1/4 on one-half, 1/4 on other half
-  quitButtonY = centerY - appHeight*1/4;
+  quitButtonX = appWidth*1/50; 
+  quitButtonY = appHeight*13/16;
   quitButtonWidth = appWidth*1/5;
   quitButtonHeight = appHeight*1/7;
 }//End quitButtonSetup

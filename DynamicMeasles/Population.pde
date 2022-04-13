@@ -64,9 +64,7 @@ void population()
   hatX2 = rectWidthHat+rectXHat; 
   hatY2 = appHeight;
   //QuitButton
-  int centerX = appWidth*1/2;
-  int centerY = appHeight*1/2;  
-  quitButtonSetupPopulation(centerX, centerY); 
+  quitButtonSetupPopulation(); 
   //QuitButtonTitle
   /*
   titleX = displayWidth*1/5;
