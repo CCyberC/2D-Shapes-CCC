@@ -1,6 +1,10 @@
 //Global Variables
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 color red=#B43C00, blue=#E0F6FC, buttonColour; //Notice nightMode Blue Values
+String title = "Exit";
+float titleX, titleY, titleWidth, titleHeight;
+PFont titleFont;
+color purple=#A18AE0, resetDefaultInk=#FFFFFF;
 //
 void quitButtonSetupPopulation(int centerX, int centerY) 
 {
@@ -39,3 +43,14 @@ void quitButtonmousePressed()
 {
   if (  mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) exit();
 }//End quitButtonmousePressed
+//
+void quitButtonTitle() 
+{
+  rect(titleX, titleY, titleWidth, titleHeight); 
+  fill(purple); //Ink, hexidecimal copied from Color Selector
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASEMENT ]
+  textFont(titleFont, 50); //Change the number until it fits
+  text(title, titleX, titleY, titleWidth, titleHeight);
+  fill(resetDefaultInk);
+}//End quitButtonTitle
