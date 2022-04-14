@@ -53,3 +53,13 @@ void hat()
   //
   image(hat, rectXHat, rectYHat, hatWidthAdjusted, hatHeightAdjusted);
 }//End hat
+void hatTitle() 
+{
+  //rect(HtitleX, HtitleY, HtitleWidth, HtitleHeight); 
+  fill(purple); //Ink, hexidecimal copied from Color Selector
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASEMENT ]
+  textFont(titleFont, 125); //Change the number until it fits
+  text(title, titleX, titleY, titleWidth, titleHeight);
+  fill(resetDefaultInk);
+}//End quitButtonTitle
