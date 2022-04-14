@@ -18,10 +18,10 @@ void measleDraw()
   measleY4 = random( pleftEyeY+measleRadius, (( MY+MHeight*1/2 ) - measleRadius));
   measleX5 = random( rectLEX+measleRadius, (rightEyeX+eyeDiameter*1/2)-measleRadius);
   measleY5 = random( MY, (( rectFaceHeight*14/16 ) - measleRadius));
-  //measleX6 = random( MX+measleRadius, (MX+(MWidth*3/4)) - measleRadius );
-  //measleY6 = random( rectFaceHeight*14/16, (( rectFaceHeight*15/16 ) - measleRadius) );
+  measleX6 = random( (pleftEyeX-(eyeDiameter*1/8)) + measleRadius, (prightEyeX+(eyeDiameter*1/8)) - measleRadius );
+  measleY6 = random( mouthY2, (( rectFaceHeight*15/16 ) - measleRadius) );
   measleX7 = random( (leftEyeX+(eyeDiameter*1/2))+(measleRadius*2), (rightEyeX-(eyeDiameter*1/2)) - (measleRadius*2) );
-  measleY7 = random( (( rectFaceHeight*15/16 ) - measleRadius), rectFaceHeight - (measleRadius*3/2) );
+  measleY7 = random( (leftEyeY - measleRadius), rectFaceHeight - (measleRadius*3/2) );
   /*
   measleX8 = random( rectFaceX+measleRadius, (( rectFaceX+rectFaceWidth ) - measleRadius ));
   measleY8 = random( rectFaceHeight*14/16, (( rectFaceHeight*15/16 ) - measleRadius) );
@@ -50,7 +50,7 @@ void measleDraw()
   ellipse( measleX3, measleY3, measleDiameter, measleDiameter );
   ellipse( measleX4, measleY4, measleDiameter, measleDiameter );
   ellipse( measleX5, measleY5, measleDiameter, measleDiameter );
-  //ellipse( measleX6, measleY6, measleDiameter, measleDiameter );
+  ellipse( measleX6, measleY6, measleDiameter, measleDiameter );
   ellipse( measleX7, measleY7, measleDiameter, measleDiameter );
   //ellipse( measleX8, measleY8, measleDiameter, measleDiameter );
   stroke(reset); //reset to 1 pixel
