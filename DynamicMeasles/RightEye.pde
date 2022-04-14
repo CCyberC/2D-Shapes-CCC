@@ -7,8 +7,8 @@ float prightEyeX, prightEyeY;
 void rightEyeDraw() 
 {
   //Right Eye
-  /*
   rectREX = rightEyeX*6.97/8;
+  /*
   rectREY = rightEyeY*1/2;
   rectREWidth = eyeDiameter;
   rectREHeight = eyeDiameter;
