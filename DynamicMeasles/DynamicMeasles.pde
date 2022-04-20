@@ -20,6 +20,7 @@ void setup()
   faceSetup();
   displayButtonOrientation();
   hat();
+  texter();
 }//End setup
 //
 void draw() 
