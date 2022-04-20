@@ -49,11 +49,6 @@ void population()
   rectYLips = MY;
   rectWidthLips = MWidth;
   rectHeightLips = MHeight;
-  backyground = loadImage("wp5495357.jpg");
-  rectXBack = rectFaceX; 
-  rectYBack = rectFaceY; 
-  rectWidthBack = rectFaceWidth; 
-  rectHeightBack = rectFaceHeight;
   hat = loadImage("476-4764599_baseball-cap-png-image-background-baseball-cap-transparent.png");
   rectXHat = rectFaceX; 
   rectYHat = rectFaceY; 
