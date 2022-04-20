@@ -73,4 +73,9 @@ void population()
   titleHeight = displayHeight*1/10;
   titleFont = createFont("Cambria-Bold-48", 55);
   //
+  TtitleX = displayWidth*1/5;
+  TtitleY = displayHeight*1/10;
+  TtitleWidth = displayWidth*3/10; 
+  TtitleHeight = displayHeight*1/10; 
+  TtitleFont = createFont("BookAntiqua-Italic-48", 55);
 }//End population
